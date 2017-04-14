@@ -1,0 +1,50 @@
+---
+title: Contact Proximisoft
+---
+
+<% content_for :additional_js do %>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="assets/javascripts/jquery.validate.min.js"></script>
+<% end %>
+
+<div class="main-container">
+  <div class="container">
+    <h1>Contact</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <form accept-charset='UTF-8' method='POST' action='https://formz.herokuapp.com/api/f/bdf277c5' id='contact-form'>
+          <input type="hidden" name="utf8" value="✓">
+
+          <div class="form-group required">
+            <label for="email" class="required">Email address</label>
+            <input type="email" name="email" class="form-control required" placeholder="Email" required>
+          </div>
+          <div class="form-group required">
+            <label for="phone" class="required">Phone</label>
+            <input type="phone" name="phone" class="form-control required" placeholder="Phone Number" required>
+          </div>
+          <div class="form-group required">
+            <label for="name" class="required">Name</label>
+            <input type="text" name="name" class="form-control required" placeholder="Full Name" required>
+          </div>
+          <div class="form-group required">
+            <label for="company" class="required">Company</label>
+            <input type="text" name="company" class="form-control required" placeholder="Company" required>
+          </div>
+          <div class="form-group required">
+            <label for="message">Message</label>
+            <textarea name="message" class="form-control required" placeholder="Message" rows="6" required></textarea>
+          </div>
+          <input type="submit" class="button button-dark">
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Thanks for Getting in Touch</h2>
+        <p>Contact sales at</p>
+        <p>514-431-3369</p>
+      </div>
+    </div>
+  </div>
+</div>
