@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){for(var t=document.getElementsByClassName("feature-card"),e=function(){var t=this.getAttribute("data-url");location.href=t},n=0;n<t.length;n++)t[n].addEventListener("click",e,!1);$("contact-form").validate({submitHandler:function(t){t.submit()}})});
