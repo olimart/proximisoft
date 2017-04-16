@@ -4,6 +4,11 @@ html {
   font: 400 16px/1.55em -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, sans-serif;
 }
 
+body { font-size: 17px; }
+a { color: #004276; }
+form { font-size: 14px; }
+
+/* Bootstrap */
 .navbar-inverse {
   background-color: hsl(200, 60%, 15%);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -11,7 +16,6 @@ html {
   color: rgba(0, 0, 0, 0.8);
 
   .navbar-brand {
-    font-size: 17px;
     font-weight: 200;
     padding: 20px 20px;
     color: rgba(255, 255, 255, 0.8);
@@ -26,10 +30,6 @@ html {
     color: rgba(255, 255, 255, 0.8);
     &:hover { color: rgba(255, 255, 255, 1); }
   }
-}
-
-a {
-  color: #004276;
 }
 
 .jumbotron {
@@ -58,12 +58,14 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .jumbotron {
-    padding-top: 50px;
-    //padding-bottom: 50px;
-  }
+  .jumbotron { padding-top: 50px; }
 }
 
+@media screen and (max-width: 768px) {
+  .jumbotron { margin-top: 200px; }
+}
+
+/* Component */
 .features {
   background-color: hsl(200, 50%, 25%);
   color: white;
@@ -115,7 +117,6 @@ a {
   p {
     font-family: "Libre Franklin", "Open Sans";
     color: rgba(0, 0, 0, 0.8);
-    font-size: 17px;
     line-height: 1.6em;
 
     &.lead {
@@ -125,6 +126,7 @@ a {
   }
 }
 
+/* Button */
 .button {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.5);
@@ -157,8 +159,4 @@ a {
     background: #004276;
     color: #fff;
   }
-}
-
-@media (max-width: 768px) {
-  .jumbotron { margin-top: 200px; }
 }
